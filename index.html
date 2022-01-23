@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Crypto Ticker</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <form class="user-form">
+            <input class="input-form" type="text" id="user-input" placeholder="Enter Symbol ex: BTC"> 
+            <p class="submit-button">Get Ticker</p>
+        </form>
+
+        <div class="crypto-ticker"> <!-- Ticker card wrapper for styling -->
+            <h1 class="ticker-name">XXX/USD</h1> <!-- Updates according to current crypto being tracked -->
+
+            <div class="price-wrapper">
+                <div class="price">$XXX.XX</div>   
+                <div class="percentage">X.XX%</div> <!-- Percentage Since the start of the daily candle -->
+            </div>
+    
+            <div class="more-info">
+                <div class="high">24hr High: $XXX.XX</div> <!-- 24 hour high -->
+                <div class="low">24hr Low: $XXX.XX</div> <!-- 24 hour low -->
+                <div class="volume">24hr Volume: $XXXXXXX</div>  <!-- Seems low. might only be volume on Kraken -->
+                <div class="trades">24hr Transactions:   XXXXXXX Trades</div> <!-- Same here. might only transactions on Kraken -->
+            </div>
+            
+        </div>
+
+
+
+    </div> <!-- End of page container -->
+
+    
+    <script src="./App.js"></script>
+</body>
+</html>
